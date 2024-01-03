@@ -1,0 +1,429 @@
+/* Reset default styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  /*  */
+}
+header {
+  background-color: #f1f3f5 !important;
+  padding: 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background-color: #ffffff; /* Updated to white */
+}
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0.7em;
+  font-family: "Poppins", sans-serif !important;
+}
+
+nav ul li {
+  margin-right: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: rgb(15, 15, 15);
+  text-decoration: none;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400;
+  position: relative;
+  text-decoration: none;
+}
+nav ul li a.active {
+  color: blue; /* Active link color */
+}
+nav ul li a.active::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  border-bottom: 3px solid blue; /* Underline color */
+}
+nav ul li a:hover {
+  color: blue; /* Hovered link color */
+}
+
+nav ul li a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid blue; /* Underline color on hover */
+}
+
+/* Search input styles */
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input[type="text"] {
+  padding: 1em;
+  border: none;
+  border-radius: 25px;
+  margin-right: 6em;
+  width: 25em;
+  height: 3em;
+}
+
+.search button {
+  padding: 8px 15px;
+  /* background-color: #ffffff; */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.search button img {
+  width: 6em;
+  height: 4em;
+  vertical-align: middle;
+  margin-right: auto;
+}
+
+.container {
+  background-color: #ffffff;
+}
+.container1 {
+  padding: 1em;
+  margin-top: 25px;
+}
+.container .col {
+  margin-top: 3%;
+}
+
+.carousel-inner {
+  border-radius: 20px;
+}
+
+section {
+  margin-left: 2%;
+}
+.wrap {
+  margin-top: 1em;
+  padding: 2em;
+}
+.wrap a {
+  position: relative;
+  margin-left: 90%;
+  margin-top: -10%;
+  text-decoration: none;
+}
+.wrap a:hover {
+  background-color: rgb(90, 90, 230);
+  border-radius: 0 10px 10px;
+  color: #000;
+}
+
+.shopping {
+  border-radius: 30px;
+}
+
+.shopping svg {
+  background-color: rgba(140, 186, 226, 0.8);
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.shopping :hover {
+  transform: scale(1.02); /* Increase the scale on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); /* Modify box-shadow on hover */
+  z-index: 1;
+}
+
+.Entertainment svg {
+  background-color: rgba(179, 179, 179, 0.8);
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.Entertainment :hover {
+  transform: scale(1.02); /* Increase the scale on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); /* Modify box-shadow on hover */
+  z-index: 1;
+}
+
+.art svg {
+  background-color: rgba(150, 210, 180, 0.8);
+  padding: 6px;
+  border-radius: 50%;
+}
+.art :hover {
+  transform: scale(1.02); /* Increase the scale on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); /* Modify box-shadow on hover */
+  z-index: 1;
+}
+
+.Tools svg {
+  background-color: rgba(136, 185, 255, 0.8);
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.Tools :hover {
+  transform: scale(1.02); /* Increase the scale on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); /* Modify box-shadow on hover */
+  z-index: 1;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Align cards in a column */
+  margin-top: 2%;
+}
+
+.card {
+  width: 250px;
+  height: 280px; /* Set a fixed height */
+  border: 1px solid #7c7979;
+  overflow: hidden;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09),
+    0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09),
+    0 32px 16px rgba(0, 0, 0, 0.09);
+  border-radius: 30%;
+  padding: 1em;
+  background-color: #7c7979;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+}
+
+.card-image {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-bottom: 1px solid #999595;
+  border-radius: 20%;
+}
+
+.card-details {
+  padding: 10px;
+}
+
+.card-details h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.stars {
+  color: gold;
+}
+
+.rating-value {
+  margin-left: 5px;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Increase the scale on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); /* Modify box-shadow on hover */
+  z-index: 1; /* Ensure the hovered card appears on top of others */
+}
+
+.banner1 img {
+  object-fit: cover;
+  justify-content: center;
+  margin-top: 1%;
+  margin-left: 3%;
+  border-radius: 30px;
+  width: 96%;
+  height: auto;
+}
+
+.banner1 h2,
+p {
+  margin-top: -17%;
+  margin-left: 10%;
+  color: #7c7979;
+}
+.banner1 .btn {
+  margin-top: -1%;
+  margin-left: 10%;
+  background-color: rgb(162, 235, 184);
+  border-radius: 30px;
+}
+.banner1 .btn:hover {
+  background-color: rgb(109, 213, 140);
+}
+
+.wrap3 .text2 {
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.wrap3 a {
+  position: relative;
+  margin-left: 90%;
+  margin-top: -10%;
+  text-decoration: none;
+}
+.wrap3 p {
+  margin-left: -0%;
+}
+.wrap3 a:hover {
+  background-color: rgb(90, 90, 230);
+  border-radius: 0 10px 10px;
+  color: #000;
+}
+.container3 {
+  padding-top: 2%;
+  margin-left: -3%;
+}
+
+.card-b {
+  height: 350px;
+  background-color: rgb(227, 219, 219);
+  padding: 5px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card-b:hover {
+  transform: scale(1.05); /* Increase the scale on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); /* Modify box-shadow on hover */
+  z-index: 1; /* Ensure the hovered card appears on top of others */
+}
+.card-body {
+  margin: 20px;
+  text-align: center;
+  height: 50%;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+.card-body:hover {
+  background-color: #ffffff;
+}
+.card-body img {
+  width: 80%;
+  display: flex;
+  position: relative;
+  margin: auto;
+  border-radius: 25px;
+}
+
+.banner2 img {
+  object-fit: cover;
+  justify-content: center;
+  margin-top: 1%;
+  margin-left: 3%;
+  border-radius: 30px;
+  width: 96%;
+  height: auto;
+}
+
+.banner2 h2,
+p {
+  margin-top: -17%;
+  margin-left: 10%;
+  color: #e9e4e4;
+}
+.banner2 .btn {
+  margin-top: -1%;
+  margin-left: 10%;
+  background-color: rgb(58, 65, 60);
+  border-radius: 30px;
+}
+.banner2 .btn:hover {
+  background-color: rgb(222, 230, 222);
+  font-weight: 400;
+}
+
+.container4 {
+  padding-top: 2%;
+}
+
+.container4 .card-b {
+  height: 350px;
+  /* background-color: rgb(227, 219, 219); */
+  padding: 5px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card-b:hover {
+  transform: scale(1.05); /* Increase the scale on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); /* Modify box-shadow on hover */
+  z-index: 1; /* Ensure the hovered card appears on top of others */
+}
+.container4 .card-body {
+  margin: 20px;
+  text-align: center;
+  height: 50%;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+.container4 .card-body:hover {
+  background-color: #ffffff;
+}
+.card-body img {
+  width: 100%;
+  position: relative;
+  margin-top: -15%;
+
+  border-radius: 2px;
+}
+.container4 .card-inner h5 {
+  position: relative;
+  margin-top: -19%;
+  margin-left: 20%;
+}
+.container4 .card-inner p {
+  color: #000;
+  margin-left: 20%;
+  font-weight: 400;
+}
+
+
+@media screen and (min-width: 600px) {
+  /* Adjustments for tablets */
+  .logo img {
+    height: 60px;
+  }
+ 
+  .container4 .card-inner p {
+    color: #000;
+    margin-left: auto;
+    font-weight: 400;
+  }
+}
+

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Chrome Web Store Example</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="left-items">
+        <div class="logo">
+          <img src="/assets/chrome_web_store_1581677170021.webp" alt="">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#" class="active">Extensions</a></li>
+            <li><a href="#">Themes</a></li>
+            <li><a href="#">Collections</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="search">
+        <span>
+          <input type="text" placeholder="Search the store" style="box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;">
+        </span>
+
+        <button type="submit" style="box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;"> <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="carouselExampleIndicators " class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/Screenshot 2024-01-03 164044.png" class="d-block w-auto " alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/Screenshot 2024-01-03 164044.png" class="d-block w-auto" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/Screenshot 2024-01-03 164044.png" class="d-block w-auto" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <section>
+
+      <div class="container1">
+        <h2 class="text-2xl font-weight-bold">Top categories</h2>
+        <div class="mt-6 row row-cols-1 row-cols-md-4 ">
+
+          <a href="" class="shopping">
+            <div class="col">
+              <button class="btn"
+                style="width: 250px; height: 80px; background-color: rgb(211, 227, 253);">
+                Shopping
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                  <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                  <path d="M3 6h18"></path>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+
+
+          <a href="" class="Entertainment">
+            <div class="col">
+              <button class="btn  rounded-md text-sm font-weight-medium h-10 px-4 py-2"
+                style="width: 250px; height: 80px; background-color: rgb(227, 227, 227);">
+                Entertainment
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                  <path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3Z"></path>
+                  <path d="m6.2 5.3 3.1 3.9"></path>
+                  <path d="m12.4 3.4 3.1 4"></path>
+                  <path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"></path>
+                </svg>
+              </button>
+            </div>
+          </a>
+          <a href="" class="Tools">
+            <div class="col">
+              <button class="btn  rounded-md text-sm font-weight-medium h-10 px-4 py-2"
+                style="width: 250px; height: 80px; background-color: rgb(194, 231, 255);">
+                Tools
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                  </path>
+                </svg>
+              </button>
+            </div>
+          </a>
+          <a href="" class="art">
+            <div class="col">
+              <button class="btn   text-sm font-weight-medium h-10 px-4 py-2"
+                style="width: 250px; height: 80px; background-color: rgb(196, 238, 208);">
+                Art &amp; Design
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2"
+                  style="background-color: rgb(109, 213, 140);">
+                  <circle cx="13.5" cy="6.5" r=".5"></circle>
+                  <circle cx="17.5" cy="10.5" r=".5"></circle>
+                  <circle cx="8.5" cy="7.5" r=".5"></circle>
+                  <circle cx="6.5" cy="12.5" r=".5"></circle>
+                  <path
+                    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z">
+                  </path>
+                </svg>
+              </button>
+            </div>
+          </a>
+
+
+
+
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <section class="wrap ">
+
+      <div class="text2">
+        <div class="flex justify-between items-center">
+          <h2 class="text-2xl font-bold leading-tight text-gray-900">user, you might like</h2>
+          <a class="text-ue-5bl00 ml-auto" href="#">
+            See more
+          </a>
+        </div>
+
+        <div class="card-container col-lg-12">
+          <div class="card col-lg-3">
+            <img src="/assets/wordtune.png" alt="Image 1" class="card-image">
+            <div class="card-details">
+              <h3>Title 1</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-value">4.5/5</span>
+              </div>
+              <p>Short explanation about the card content.</p>
+            </div>
+          </div>
+
+          <div class="card col-lg-3">
+            <img src="/assets/wordtune.png" alt="Image 1" class="card-image">
+            <div class="card-details">
+              <h3>Title 1</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-value">4.5/5</span>
+              </div>
+              <p>Short explanation about the card content.</p>
+            </div>
+          </div>
+
+          <div class="card col-lg-3">
+            <img src="/assets/wordtune.png" alt="Image 1" class="card-image">
+            <div class="card-details">
+              <h3>Title 1</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-value">4.5/5</span>
+              </div>
+              <p>Short explanation about the card content.</p>
+            </div>
+          </div>
+
+
+          <div class="card col-lg-3">
+            <img src="/assets/wordtune.png" alt="Image 1" class="card-image">
+            <div class="card-details">
+              <h3>Title 1</h3>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-value">4.5/5</span>
+              </div>
+              <p>Short explanation about the card content.</p>
+            </div>
+          </div>
+          <!-- Repeat the structure for other cards -->
+          <!-- Card 2, Card 3, Card 4, Card 5 -->
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="wrap2">
+      <div class="banner1">
+        <img src="/assets/banner_editors_picks.png" alt="">
+        <h2>Editors piks for you</h2>
+        <p>Handpicked by Journal Editors</p>
+        <button class="btn">see Collections</button>
+      </div>
+    </section>
+    <section class="wrap3">
+      <div class="text2">
+        <div class="flex justify-between items-center">
+          <a class="text-ue-5bl00" href="#">
+            See more
+          </a>
+          <h2 class="text-2xl font-bold leading-tight text-gray-900">AI-powered extensions</h2>
+          <p>Elevate your browser with Generative AI powered extensions
+
+          </p>
+
+        </div>
+        <div class="container3 ">
+          <div class="row pt-3">
+            <div class="col-sm-6 col-md-3">
+              <div class="card-b">
+                <div class="card-body bg-light">
+                  <a href="#"><img src="/assets/wordtune.png" alt=""></a>
+                  <p>welcome to our world</p>
+                </div>
+                <div class="p-3">
+                  <h5>this is the title</h5>
+                  <span>4.3 * rating</span>
+                  <p>view transfer easier as the English to any language</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="card-b">
+                <div class="card-body bg-light">
+                  <a href="#"><img src="/assets/wordtune.png" alt=""></a>
+                  <p>welcome to our world</p>
+                </div>
+                <div class="p-3">
+                  <h5>this is the title</h5>
+                  <span>4.3 * rating</span>
+                  <p>view transfer easier as the English to any language</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="card-b">
+                <div class="card-body bg-light">
+                  <a href="#"><img src="/assets/wordtune.png" alt=""></a>
+                  <p>welcome to our world</p>
+                </div>
+                <div class="p-3">
+                  <h5>this is the title</h5>
+                  <span>4.3 * rating</span>
+                  <p>view transfer easier as the English to any language</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <div class="card-b">
+                <div class="card-body bg-light">
+                  <a href="#"><img src="/assets/wordtune.png" alt=""></a>
+                  <p>welcome to our world</p>
+                </div>
+                <div class="p-3">
+                  <h5>this is the title</h5>
+                  <span>4.3 * rating</span>
+                  <p>view transfer easier as the English to any language</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+    <section class="wrap2 pt-5">
+      <div class="banner2">
+        <img src="/assets/banner_dark_mode.png" alt="">
+        <h2>Eclips your screen</h2>
+        <p>Handpicked by Journal Editors</p>
+        <button class="btn">see Collections</button>
+      </div>
+    </section>
+
+    <section class="wrap3">
+      <div class="text2">
+        <div class="flex justify-between items-center">
+          <a class="text-ue-5bl00" href="#">
+            See more
+          </a>
+          <h2 class="text-2xl font-bold leading-tight text-gray-900">Chrome Editors' spotlight</h2>
+          <p>Promising up-and-coming extensions to try out
+          </p>
+
+        </div>
+        <div class="container4 ">
+          <div class="row pt-3">
+            <div class="col-sm-6 col-md-4">
+              <div class="card-b">
+                <div class="card-inner">
+                  <img src="/assets/owel.png" alt="">
+                    <h5>Helpbird: Accesebility &</h5>
+                    <p>Lorem ipsum dolor sit etur sequi laudantium explicabo?</p>
+                </div>
+                <div class="card-body">
+                  <a href="#"><img src="/assets/owelw.png"  alt=""></a>
+                  
+                </div>
+               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card-b">
+                <div class="card-inner">
+                  <img src="/assets/qrcode.png" alt="">
+                    <h5>Helpbird: Accesebility &</h5>
+                    <p>Lorem ipsum dolor sit etur sequi laudantium explicabo?</p>
+                </div>
+ 
+                <div class="card-body">
+                  <a href="#"><img src="/assets/qrcode2.jpg" alt=""></a>
+                </div>
+              
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card-b">
+                <div class="card-inner">
+                  <img src="/assets/owel.png" alt="">
+                    <h5>Helpbird: Accesebility &</h5>
+                    <p>Lorem ipsum dolor sit etur sequi laudantium explicabo?</p>
+                </div>
+ 
+                <div class="card-body">
+                  <a href="#"><img src="/assets/test.png" alt=""></a>
+                </div>
+              
+              </div>
+            </div>
+          
+          </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+  </div>
+
+  <!-- Other content goes here -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script>
+    var myCarousel = new bootstrap.Carousel(document.querySelector('.carousel'), {
+      interval: 1500, // Set the interval as needed
+      // Other options if required
+    });
+  </script>
+
+</body>
+
+</html>
